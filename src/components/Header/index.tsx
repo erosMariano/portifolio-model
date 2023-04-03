@@ -23,10 +23,10 @@ function Header({ setTheme, theme}: PropsHome) {
               <a href="">Skills</a>
             </li>
             <li>
-              <a href="">Web Design</a>
+              <a href="web-design">Web Design</a>
             </li>
             <li>
-              <a href="">Projetos</a>
+              <a href="/projetos">Projetos</a>
             </li>
             <li>
               <a href="">Contato</a>

@@ -1,8 +1,9 @@
-import Header from "../Header";
+import Header from "../../components/Header";
 import { PropsTheme } from "../Home";
 import { SobreMimContainer, MainContainer, ContainerCEP } from "./styles";
 import NathaliaSobreMim from "../../assets/sobre-mim.png";
 import { useState } from "react";
+import TitleSection from "../../components/TitleSection";
 
 interface CepProps {
   bairro: string;
@@ -33,8 +34,8 @@ function SobreMim({ theme, setTheme }: PropsTheme) {
     <MainContainer theme={theme}>
       <Header setTheme={setTheme} theme={theme} />
       <SobreMimContainer theme={theme} className="container">
-        <h2>Sobre mim</h2>
-
+        <TitleSection type="pink" title="Sobre mim" />
+        
         <h3>Confira meu CEP!</h3>
 
         <ContainerCEP theme={theme}>

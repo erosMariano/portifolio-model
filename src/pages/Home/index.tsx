@@ -1,4 +1,4 @@
-import Header from "../Header";
+import Header from "../../components/Header";
 import NathaliaImg from "../../assets/nathalia.png";
 import { ContainerHome, HomeContainer } from "./styles";
 
