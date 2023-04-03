@@ -8,11 +8,12 @@ export const HeaderContainer = styled.header<HeaderContainerProps>`
   align-items: center;
   padding-top: 48px;
 
-  a, span{
+  a{
     text-decoration: none;
     color: ${props => props.theme === "light" ? "#000000" : "#fff"};
   }
   
+
   .container {
     display: flex;
     justify-content: space-between;
