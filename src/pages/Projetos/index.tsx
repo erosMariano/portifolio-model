@@ -10,21 +10,21 @@ function Projetos({ setTheme, theme }: PropsTheme) {
       title: "Semana Front End - Digital Inovation One",
       subtitle: "Site - Mundo invertido",
       urlDirecionamento: "#",
-      urlImg: "./src/assets/mundo-invertido.png",
+      urlImg: "/images/mundo-invertido.png",
     },
 
     {
       title: "NLW Rocketseat - eSports",
       subtitle: "Site - eSports",
       urlDirecionamento: "#",
-      urlImg: "./src/assets/e-sports.png",
+      urlImg: "/images/e-sports.png",
     },
 
     {
       title: "Gulliver Traveller - Fiap",
       subtitle: "Projeto da faculdade",
       urlDirecionamento: "#",
-      urlImg: "./src/assets/dev-sites.png",
+      urlImg: "/images/dev-sites.png",
     },
   ];
   return (

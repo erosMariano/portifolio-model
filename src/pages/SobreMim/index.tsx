@@ -1,7 +1,7 @@
 import Header from "../../components/Header";
 import { PropsTheme } from "../Home";
 import { SobreMimContainer, MainContainer, ContainerCEP } from "./styles";
-import NathaliaSobreMim from "../../assets/sobre-mim.png";
+import NathaliaSobreMim from "/images/sobre-mim.png";
 import { useState } from "react";
 import TitleSection from "../../components/TitleSection";
 
