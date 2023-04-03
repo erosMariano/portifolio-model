@@ -1,25 +1,24 @@
 import styled from "styled-components";
 
-interface HomeContainerTheme{
+interface HomeContainerTheme {
   theme: "light" | "dark";
 }
-export  const  HomeContainer = styled.div<HomeContainerTheme>`
+export const HomeContainer = styled.div<HomeContainerTheme>`
   height: 100vh;
-  background: ${props => props.theme === "light" ? "#fff" : "#07091B"};
-  transition: .3s;
-
-  p, h2{
-    color: ${props => props.theme === "light" ? "#000" : "#fff"};
-    transition: .3s;
+  background: ${(props) => (props.theme === "light" ? "#fff" : "#07091B")};
+  transition: 0.3s;
+  p,
+  h2 {
+    color: ${(props) => (props.theme === "light" ? "#000" : "#fff")};
+    transition: 0.3s;
   }
-`
-
+`;
 
 export const ContainerHome = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+
   h2 {
     font-family: "Montserrat";
     font-style: normal;
@@ -42,9 +41,8 @@ export const ContainerHome = styled.div`
 
     max-width: 392px;
 
-    span{
+    span {
       color: #f925a2;
     }
   }
 `;
-
