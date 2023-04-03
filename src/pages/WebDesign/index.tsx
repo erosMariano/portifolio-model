@@ -7,17 +7,17 @@ import { ContainerMain, Produtos, Container } from "./styles";
 function WebDesign({ setTheme, theme }: PropsTheme) {
   const itensWebDesign = [
     {
-      img: "src/assets/logo-e-marcas.png",
+      img: "./src/assets/logo-e-marcas.png",
       description: "Logotipos e Logomarcas",
     },
 
     {
-      img: "src/assets/artes-digitais.png",
+      img: "./src/assets/artes-digitais.png",
       description: "Artes digitais para mídias sociais",
     },
 
     {
-      img: "src/assets/dev-sites.png",
+      img: "./src/assets/dev-sites.png",
       description: "Desenvolvimento de sites e landing pages.",
     },
   ];
