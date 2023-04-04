@@ -8,6 +8,9 @@ export const HeaderContainer = styled.header<HeaderContainerProps>`
   display: flex;
   align-items: center;
   padding-top: 48px;
+  .menu{
+    display: none;
+  }
 
   .menuContainer {
     display: flex;
@@ -35,6 +38,9 @@ export const HeaderContainer = styled.header<HeaderContainerProps>`
   }
   @media (max-width: 1000px) {
     padding-top: 20px;
+    .menu{
+      display: block;
+    }
     nav {
       position: fixed;
       left: ${(props) => (!props.activeNav ? "100%" : "0%")};
