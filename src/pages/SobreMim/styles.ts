@@ -6,10 +6,12 @@ interface SobreMimContainerTheme {
 export const MainContainer = styled.main<SobreMimContainerTheme>`
   background: ${(props) => (props.theme === "light" ? "#fff" : "#07091B")};
   transition: 0.3s;
+  min-height: 100vh;
 `;
 export const SobreMimContainer = styled.div<SobreMimContainerTheme>`
   &.container {
-    padding: 0px 0px;
+    padding-left: 16px;
+    padding-right: 16px;
     padding-top: 80px;
     padding-bottom: 80px;
   }
@@ -60,10 +62,23 @@ export const ContainerCEP = styled.div<SobreMimContainerTheme>`
     align-items: center;
     justify-content: center;
     gap: 32px;
+    margin-bottom: 24px;
   }
-  h4,
-  h3 {
+
+  @media(max-width: 1000px){
+    .titles{
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 36px;
+
+      button{
+        width: 100%;
+      }
+    }
+  }
+  h5 {
     color: ${(props) => (props.theme === "light" ? "#9B3EF8" : "#fff")};
+    margin-bottom: 16px;
   }
   h4 {
     text-align: center;
@@ -79,12 +94,8 @@ export const ContainerCEP = styled.div<SobreMimContainerTheme>`
   table tbody tr:nth-child(even) {
     background-color: #40513b14;
   }
-  td,
-  th {
-    padding: 15px 10px;
-    font-size: 14px;
+  h5 span {
     color: ${(props) => (props.theme === "light" ? "#675d50" : "#cecece")};
-
   }
   th {
     cursor: pointer;

@@ -1,4 +1,5 @@
 import { Routes, Route, Outlet } from "react-router-dom";
+import Contato from "./pages/Contato";
 import Home from "./pages/Home";
 import Projetos from "./pages/Projetos";
 import SobreMim from "./pages/SobreMim";
@@ -15,6 +16,8 @@ export function Router({ theme, setTheme }: PropsRouter) {
       <Route path="/sobre-mim" element={<SobreMim theme={theme} setTheme={setTheme}/>} />
       <Route path="/web-design" element={<WebDesign theme={theme} setTheme={setTheme}/>} />
       <Route path="/projetos" element={<Projetos theme={theme} setTheme={setTheme}/>} />
+      <Route path="/contato" element={<Contato theme={theme} setTheme={setTheme}/>} />
+
     </Routes>
   );
 }

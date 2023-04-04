@@ -35,7 +35,7 @@ function SobreMim({ theme, setTheme }: PropsTheme) {
       <Header setTheme={setTheme} theme={theme} />
       <SobreMimContainer theme={theme} className="container">
         <TitleSection type="pink" title="Sobre mim" />
-        
+
         <h3>Confira meu CEP!</h3>
 
         <ContainerCEP theme={theme}>
@@ -45,54 +45,66 @@ function SobreMim({ theme, setTheme }: PropsTheme) {
           </div>
 
           {cepInformation.bairro !== "" ? (
-            <table>
-              <tr>
-                <th>bairro</th>
-                <th>cep</th>
-                <th>complemento</th>
-                <th>ddd</th>
-                <th>localidade</th>
-                <th>logradouro</th>
-                <th>uf</th>
-              </tr>
-              <tr>
-                <td>
-                  {cepInformation.bairro !== ""
-                    ? cepInformation.bairro
-                    : "Bairro não encontrado"}
-                </td>
-                <td>
-                  {cepInformation.cep !== ""
-                    ? cepInformation.cep
-                    : "CEP não encontrado"}
-                </td>
-                <td>
-                  {cepInformation.complemento !== ""
-                    ? cepInformation.complemento
-                    : "Complemento não encontrado"}
-                </td>
-                <td>
-                  {cepInformation.ddd !== ""
-                    ? cepInformation.ddd
-                    : "DDD não encontrado"}
-                </td>
-                <td>
-                  {cepInformation.localidade !== ""
-                    ? cepInformation.localidade
-                    : "Localidade não encontrado"}
-                </td>
-                <td>
-                  {cepInformation.logradouro !== ""
-                    ? cepInformation.logradouro
-                    : "Logradouro não encontrado"}
-                </td>
-                <td>
-                  {cepInformation.uf !== ""
-                    ? cepInformation.uf
-                    : "UF não encontrado"}
-                </td>
-              </tr>
-            </table>
+            <>
+              <div>
+                <h5>
+                  BAIRRO:{" "}
+                  <span>
+                    {cepInformation.bairro !== ""
+                      ? cepInformation.bairro
+                      : "Bairro não encontrado"}
+                  </span>
+                </h5>
+                <h5>
+                  CEP:{" "}
+                  <span>
+                    {cepInformation.cep !== ""
+                      ? cepInformation.cep
+                      : "CEP não encontrado"}
+                  </span>
+                </h5>
+                <h5>
+                  COMPLEMENTO:{" "}
+                  <span>
+                    {cepInformation.complemento !== ""
+                      ? cepInformation.complemento
+                      : "Complemento não encontrado"}
+                  </span>
+                </h5>
+                <h5>
+                  DDD:{" "}
+                  <span>
+                    {cepInformation.ddd !== ""
+                      ? cepInformation.ddd
+                      : "DDD não encontrado"}
+                  </span>
+                </h5>
+                <h5>
+                  LOCALIDADE:{" "}
+                  <span>
+                    {cepInformation.localidade !== ""
+                      ? cepInformation.localidade
+                      : "Localidade não encontrado"}
+                  </span>
+                </h5>
+                <h5>
+                  LOGRADOURO:{" "}
+                  <span>
+                    {cepInformation.logradouro !== ""
+                      ? cepInformation.logradouro
+                      : "Logradouro não encontrado"}
+                  </span>
+                </h5>
+                <h5>
+                  UF:{" "}
+                  <span>
+                    {cepInformation.uf !== ""
+                      ? cepInformation.uf
+                      : "UF não encontrado"}
+                  </span>
+                </h5>
+              </div>
+            </>
           ) : (
             <></>
           )}

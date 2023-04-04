@@ -19,6 +19,16 @@ export const ContainerHome = styled.div`
   align-items: center;
   justify-content: space-between;
 
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    &.container {
+      padding-top: 80px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
   h2 {
     font-family: "Montserrat";
     font-style: normal;

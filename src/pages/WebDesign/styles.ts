@@ -6,6 +6,7 @@ export const ContainerMain = styled.main<ContainerMainProps>`
   background: ${(props) => (props.theme === "light" ? "#fff" : "#07091B")};
   transition: 0.3s;
   min-height: 100vh;
+  padding-bottom: 80px;
 
   p {
     text-align: center;
@@ -32,4 +33,8 @@ export const Produtos = styled.div`
 
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 `;
